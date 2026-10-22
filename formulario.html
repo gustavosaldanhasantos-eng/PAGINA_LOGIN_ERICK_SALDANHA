@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario de login</title>
+</head>
+
+<body>
+
+    <h2>Login</h2>
+
+
+    <input type="text" id="usuario" placeholder="Usuário"><br><br>
+    <input type="text" id="senha" placeholder="Senha"><br><br>
+
+    <button onclick="acessar()">Logar</button>
+
+    <script>
+        function acessar() {
+            let user = document.getElementById("usuario").value;
+            let pass = document.getElementById("senha").value;
+
+
+            if (user === "Gustavo" && pass === "cesf2026") {
+                alert("Login realizado com sucesso.");
+            }
+            else {
+                alert("Usuário ou senha incorretos");
+            }
+        }
+    </script>
+
+</body>
+
+</html>
